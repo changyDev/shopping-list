@@ -27,8 +27,8 @@ $(function addItem() {
 })
 
 $(function strikeThrough() {
-    $('ul').on('click', 'span', function() {
-        $(this).closest('li').toggleClass('shopping-item__checked');
+    $('ul').on('click', '.shopping-item-toggle', function() {
+        $(this).closest('li').find('.shopping-item').toggleClass('shopping-item__checked');
     });
 })
 
